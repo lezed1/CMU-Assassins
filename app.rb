@@ -4,7 +4,7 @@ require 'sinatra/base'
 require 'simple-navigation'
 require 'mandrill'
 require 'data_mapper'
-require 'less'
+require 'tilt/less'
 require 'slim'
 require 'coffee_script'
 
