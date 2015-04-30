@@ -111,7 +111,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt-ruby
+  bcrypt
   coffee-script
   data_mapper
   dm-postgres-adapter
