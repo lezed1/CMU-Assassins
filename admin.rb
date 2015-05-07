@@ -122,6 +122,7 @@ module Assassins
       players.each_index do |i|
         players[i].set_target_notify(players[(i + 1) % players.length])
         players[i].last_activity = start_time
+        players[i].is_alive = true
         players[i].save!
       end
 
