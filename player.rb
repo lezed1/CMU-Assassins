@@ -163,7 +163,7 @@ module Assassins
 
     post '/dashboard/assassinate', :logged_in => true, :game_state => :ingame do
       target = @player.target
-      if (@player.failed_kill_attempts > 5)
+      if (@player.failed_kill_attempts > 25)
         slim :dashboard, :locals => {:errors =>
           ["You have entered too many incorrect secret words. Please contact us to unlock your account."]}
       elsif (params.has_key?('target_secret') &&
